@@ -24,8 +24,8 @@ export function parse(text: string, options?: ParsingOptions): Array<EmojiEntity
       ? options.buildUrl
       : (codepoints, assetType) =>
           assetType === 'png'
-            ? `'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/${codepoints}.png`
-            : `'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${codepoints}.svg`;
+            ? `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/${codepoints}.png`
+            : `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${codepoints}.svg`;
 
   const entities = [];
 
